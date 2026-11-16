@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PULSE · Performance management for Groww</title>
+<meta name="description" content="PULSE: an evidence-led, AI-assisted and contestable performance management system for Groww. Hackathon submission with a working prototype, synthetic test data and test results.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%277%27 fill=%27%2306222e%27/%3E%3Cpath d=%27M4 17h6l3-8 5 15 3-7h7%27 stroke=%27%23ff2e7e%27 stroke-width=%273%27 fill=%27none%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="logo" href="index.html" aria-label="PULSE home"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#0f3a49"/><path d="M4 17h6l3-8 5 15 3-7h7" stroke="#ff2e7e" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>PULSE</a>
+  <span class="syn">Synthetic data</span>
+  <nav aria-label="Site"><a href="index.html" aria-current="page">Overview</a><a href="#diagnosis">Diagnosis</a><a href="#design">Design</a><a href="#ai">AI</a><a href="evidence.html">Evidence &amp; tests</a><a href="#downloads">Downloads</a><a class="cta" href="app.html">Open prototype</a></nav>
+</div></header>
+
+<section class="hero"><div class="wrap">
+  <div>
+    <div class="kick">Performance Hackathon · AI-driven performance management</div>
+    <h1>Ratings Groww's people can see, question and trust</h1>
+    <p class="sub">PULSE redesigns goal-setting, feedback, appraisal, calibration and development for a fast-growing, regulated fintech. AI explains and checks every rating; people make every decision.</p>
+    <div class="btns"><a class="btn p" href="app.html">Open the live prototype →</a><a class="btn g" href="evidence.html">See tests and evidence</a></div>
+    <p class="mut" style="color:#9fc0cb;margin-top:18px">Team: [Name 1] · [Name 2] · [Name 3]</p>
+  </div>
+  <div class="demo" aria-label="Example of an explained rating from the prototype">
+    <div class="row"><div><div class="lab">Evidence band (AI suggestion)</div><div class="big">4</div><div>Exceeds · high confidence</div></div>
+      <div style="text-align:right"><div class="lab">Manager rating</div><div class="big" style="color:#ff6fa5">3</div><div>Strong</div></div></div>
+    <div class="bars" style="margin-top:14px">
+      <div class="r"><span>Outcomes (OKRs)</span><div class="track"><div class="fill" style="left:50%;width:36%"></div></div><b>+8.8</b></div>
+      <div class="r"><span>Customer &amp; quality</span><div class="track"><div class="fill" style="left:50%;width:20%"></div></div><b>+4.9</b></div>
+      <div class="r"><span>Values in action</span><div class="track"><div class="fill" style="left:50%;width:10%"></div></div><b>+2.5</b></div>
+      <div class="r"><span>Growth &amp; learning</span><div class="track"><div class="fill" style="left:50%;width:14%"></div></div><b>+3.5</b></div>
+    </div>
+    <div class="flag"><b>Flag: team gender gap (watch).</b> Rated a band below the evidence. Sent to the calibration panel, and the employee can contest.</div>
+  </div>
+</div></section>
+
+<div class="wrap"><div class="stats">
+  <div class="stat"><b>25 / 25</b><span>automated tests pass</span></div>
+  <div class="stat"><b>7</b><span>planted bias scenarios, each with an answer key</span></div>
+  <div class="stat"><b>0 / 160</b><span>suggestions changed when gender or location is flipped</span></div>
+  <div class="stat"><b>0</b><span>automated pay, promotion or exit decisions</span></div>
+</div></div>
+
+<section class="ch reveal" id="challenge"><div class="wrap">
+  <div class="kick">1 · Challenge and evidence</div>
+  <h2>Groww is scaling fast. Its performance system is not keeping up</h2>
+  <p class="lead">Revenue grew 47% year on year in Q2 FY27 and headcount reached 1,802. Attrition is highest exactly where a one-size appraisal hurts most.</p>
+  <div class="g2" style="margin-top:24px">
+    <div class="card"><h3>Attrition by function (from the DRHP)</h3>
+      <div class="hb">
+        <div class="r"><span>Customer support, FY24</span><div class="t"><i style="width:34.6%;background:#9fc0cb">34.6%</i></div></div>
+        <div class="r"><span>Customer support, FY25</span><div class="t"><i style="width:50%;background:var(--acc)">50%</i></div></div>
+        <div class="r"><span>Eng / product / design, FY23</span><div class="t"><i style="width:18.7%;background:#9fc0cb">18.7%</i></div></div>
+        <div class="r"><span>Eng / product / design, FY25</span><div class="t"><i style="width:27.1%;background:var(--acc)">27.1%</i></div></div>
+      </div><p class="mut">Source: updated DRHP via Storyboard18, Sep 2025.</p></div>
+    <div class="card"><h3>The business and its people</h3><table><tbody>
+      <tr><td>Q2 FY27 revenue from operations</td><td class="n"><b>₹1,501 Cr</b> (+47%)</td></tr>
+      <tr><td>Transacting users</td><td class="n"><b>2.4 Cr</b></td></tr>
+      <tr><td>Full-time staff, Mar 2026</td><td class="n"><b>1,802</b></td></tr>
+      <tr><td>Platforms · Wealth · Customer Success · AMC</td><td class="n">834 · 427 · 414 · 127</td></tr>
+      <tr><td>Glassdoor rating · would recommend</td><td class="n">≈3.5 / 5 · 64–69%</td></tr>
+      <tr><td>CEO approval</td><td class="n">88%</td></tr></tbody></table>
+      <p class="mut">Sources: Q2 FY27 results (Inc42, Business Today), FY26 Annual Report, Glassdoor. Leadership is trusted, but the review process is not.</p></div>
+  </div>
+</div></section>
+
+<section class="ch reveal" id="diagnosis"><div class="wrap">
+  <div class="kick">2 · Root-cause diagnosis</div>
+  <h2>Five causes: opaque, rater-dependent, one-size-fits-all</h2>
+  <p class="lead">We separated facts (filings) from perceptions (anonymous reviews). A review theme counts only when two sources agree.</p>
+  <div class="g3" style="margin-top:24px">
+    <div class="card"><span class="chip watch">Medium</span><h3 style="margin-top:10px">Appraisal mechanics are opaque</h3><p class="mut">"No visibility into mechanics of how appraisals are done" (Glassdoor, 2026). The annual report discloses no appraisal process, which clashes with Groww's value of complete transparency.</p></div>
+    <div class="card"><span class="chip watch">Medium</span><h3 style="margin-top:10px">Outcomes depend on who rates you</h3><p class="mut">Favouritism and politics recur across AmbitionBox and Glassdoor. Research finds most rating variance reflects the rater, not the ratee.</p></div>
+    <div class="card"><span class="chip watch">Medium</span><h3 style="margin-top:10px">One system for very different jobs</h3><p class="mut">Pods, high-volume support, advisory sales and compliance share one template. Support has 50% attrition and its reviews single out "appraisal and hike".</p></div>
+    <div class="card"><span class="chip bad">Medium-high</span><h3 style="margin-top:10px">Pay-for-performance feels asymmetric</h3><p class="mut">FY26 median pay +18.1% and non-managerial +11.7%, against +66.7% for senior management. Reviews mention "bad hikes".</p></div>
+    <div class="card"><span class="chip">Inferred</span><h3 style="margin-top:10px">Scale, M&amp;A and regulation add risk</h3><p class="mut">Headcount +27% in nine months including Fisdom. Growth in MTF, lending and wealth means sales-only targets can reward mis-selling.</p></div>
+    <div class="card" style="background:var(--soft)"><h3>How we read reviews</h3><p class="mut">Most review pages hold only 1–3 reviews and are anonymous, so we used them as themes, never as facts. We excluded look-alike entities and also recorded the positives: learning, a flat culture, approachable founders.</p></div>
+  </div>
+</div></section>
+
+<section class="ch reveal" id="design"><div class="wrap">
+  <div class="kick">3 · Strategy and performance principles</div>
+  <h2>Groww's own values become the design rules</h2>
+  <div class="g2" style="margin-top:24px">
+    <div class="card"><table><thead><tr><th>Groww value</th><th>Design rule in PULSE</th></tr></thead><tbody>
+      <tr><td><b>Complete transparency</b></td><td>Every rating shows its evidence and math; the employee sees what the manager sees</td></tr>
+      <tr><td><b>Ownership</b></td><td>Employees log evidence and own goals; managers own decisions; the AI never decides</td></tr>
+      <tr><td><b>Radical customer centricity</b></td><td>Customer and quality is scored, and outweighs volume in Customer Success</td></tr>
+      <tr><td><b>Keeping it simple</b></td><td>4 dimensions, 5 anchored bands, no forced bell curve</td></tr>
+      <tr><td><b>Long-term thinking</b></td><td>Conduct gate: confirmed mis-selling caps the rating and claws back variable pay</td></tr></tbody></table></div>
+    <div class="card"><h3>Role-family scorecards (weights, %)</h3><div class="scroll"><table><thead><tr><th>Role family</th><th class="n">Outcomes</th><th class="n">Customer &amp; quality</th><th class="n">Values</th><th class="n">Growth</th></tr></thead><tbody>
+      <tr><td>Platforms (pods)</td><td class="n heat">45</td><td class="n">20</td><td class="n">20</td><td class="n">15</td></tr>
+      <tr><td>Customer Success</td><td class="n">25</td><td class="n heat">45</td><td class="n">15</td><td class="n">15</td></tr>
+      <tr><td>Wealth &amp; Advisory</td><td class="n heat">40</td><td class="n">30</td><td class="n">15</td><td class="n">15</td></tr>
+      <tr><td>AMC, Risk &amp; Compliance</td><td class="n">35</td><td class="n">35</td><td class="n">15</td><td class="n">15</td></tr></tbody></table></div>
+      <p class="mut" style="margin-top:12px">Cadence: quarterly pod OKRs, 15-minute check-ins every two weeks, half-yearly review and calibration, annual pay decision. Development plans are discussed apart from pay.</p></div>
+  </div>
+</div></section>
+
+<section class="ch reveal" id="process"><div class="wrap">
+  <div class="kick">4 · Redesigned end-to-end process</div>
+  <h2>One cycle, nine steps, a human decision at every gate</h2>
+  <div class="flow" style="margin-top:24px">
+    <div><b>Plan</b>Quarterly OKRs; goal coach checks SMART + OKR link</div>
+    <div><b>Check in</b>Every two weeks; notes feed the evidence ledger</div>
+    <div><b>Evidence</b>Metrics, kudos, QA, conduct flow in continuously</div>
+    <div class="ai"><b>Review</b>Manager sees the AI band and its explanation</div>
+    <div class="ai"><b>Audit</b>Fairness monitor flags leniency, gaps, recency</div>
+    <div class="h"><b>Calibrate</b>Panel reviews alerts; overrides justified</div>
+    <div><b>Release</b>Employee sees the rating, evidence and math</div>
+    <div class="h"><b>Contest</b>Independent HRBP decides within 10 working days</div>
+    <div class="h"><b>Grow &amp; reward</b>Development plan; merit band; conduct malus</div>
+  </div>
+  <p class="mut" style="margin-top:14px">Pink outline = AI-assisted step. Dark = human decision. Governance: an AI and Model Risk Committee (HR Analytics, Compliance, Legal/DPO, employee representatives) owns weights, thresholds and the kill switch, and runs a quarterly bias audit.</p>
+</div></section>
+
+<section class="ch ink reveal" id="ai"><div class="wrap">
+  <div class="kick">5 · AI and data architecture with safeguards</div>
+  <h2>Explainable services behind a privacy gateway</h2>
+  <p class="lead">Gender and location never reach the scorer; only the fairness audit reads them. The LLM summarises and rewrites, always citing source records, and never scores anyone.</p>
+  <div class="arch" style="margin-top:26px">
+    <div class="col"><b>Evidence sources</b><span>OKR tool</span><span>CS quality: CSAT, QA, FCR</span><span>Delivery (team-level)</span><span>Peer kudos</span><span>Compliance register</span><span>Learning system</span></div>
+    <div class="col"><b>Privacy gateway</b><span>Field whitelist</span><span>Pseudonymised IDs</span><span>Purpose &amp; retention limits</span><span>Role-based access</span></div>
+    <div class="col ai"><b>AI services</b><span>Goal coach</span><span>Evidence scorer + explainer</span><span>Language coach</span><span>Fairness monitor</span><span>LLM summariser (grounded)</span></div>
+    <div class="col h"><b>Human decisions</b><span>Self-review</span><span>Manager rating</span><span>Calibration panel</span><span>Appeal (HRBP)</span></div>
+    <div class="col"><b>Assurance</b><span>Hash-chained audit log</span><span>Model card, bias audit</span><span>Kill switch</span><span>Outcome dashboard</span></div>
+  </div>
+  <div class="g3" style="margin-top:26px">
+    <div class="card"><h3>Explainable and abstaining</h3><p class="mut">Factor contributions add up exactly to the score. No band is suggested with under 4 evidence items or under 3 months of tenure.</p></div>
+    <div class="card"><h3>Contestable and overseen</h3><p class="mut">Overrides need evidence-based, bias-free reasons. Employees can appeal, and HR holds a kill switch.</p></div>
+    <div class="card"><h3>Private and auditable</h3><p class="mut">The design follows the DPDP Act 2023 and Rules 2025, with no keystroke or chat surveillance, and a SHA-256 audit chain. It treats the EU AI Act's high-risk rules as its benchmark.</p></div>
+  </div>
+</div></section>
+
+<section class="ch reveal" id="prototype"><div class="wrap">
+  <div class="kick">6 · Prototype features and workflow</div>
+  <h2>Three roles, one evidence ledger. Try it</h2>
+  <p class="lead">A working web app with 160 synthetic employees and 16 managers. Every button works and every action is logged.</p>
+  <div class="g3 feat" style="margin-top:24px">
+    <div class="card"><h3><span class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg></span>Employee</h3><ul><li>AI band with factor-by-factor explanation</li><li>Goals with a SMART check and a live goal coach</li><li>Evidence timeline and check-in logging</li><li>Development plan; contest a rating</li></ul><a class="btn o" href="app.html#employee">Open employee view</a></div>
+    <div class="card"><h3><span class="ico"><svg viewBox="0 0 24 24"><circle cx="8" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M2 20c0-3 3-5 6-5s6 2 6 5M14 20c0-2 2-4 4-4s4 1 4 4"/></svg></span>Manager</h3><ul><li>Team table with AI bands and flags</li><li>Live language coach blocks biased wording</li><li>Override only with an evidence-based reason</li><li>Check-in health and leniency score</li></ul><a class="btn o" href="app.html#manager">Open manager view</a></div>
+    <div class="card"><h3><span class="ico"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span>HR &amp; governance</h3><ul><li>Manager leniency plot and hidden team gaps</li><li>Case queue and calibration simulation</li><li>Appeals queue and tamper-evident audit trail</li><li>Kill switch, weights editor, model card</li></ul><a class="btn o" href="app.html#hr">Open calibration room</a></div>
+  </div>
+</div></section>
+
+<section class="ch reveal" id="tests"><div class="wrap">
+  <div class="kick">7 · Test cases, results and limitations</div>
+  <h2>25 of 25 tests pass, and every planted bias has an answer key</h2>
+  <div class="g2" style="margin-top:24px">
+    <div class="card"><h3>Simulated calibration impact (lower is better)</h3>
+      <div class="hb">
+        <div class="r"><span>Manager leniency spread</span><div><div class="t"><i style="width:68%;background:var(--neg)">0.34 before</i></div><div class="t" style="margin-top:4px"><i style="width:38%;background:var(--pos)">0.19 after</i></div></div></div>
+        <div class="r"><span>Average gap from evidence</span><div><div class="t"><i style="width:82%;background:var(--neg)">0.58</i></div><div class="t" style="margin-top:4px"><i style="width:56%;background:var(--pos)">0.39</i></div></div></div>
+        <div class="r"><span>Hidden team gender gap</span><div><div class="t"><i style="width:100%;background:var(--neg)">0.71</i></div><div class="t" style="margin-top:4px"><i style="width:22%;background:var(--pos)">0.11</i></div></div></div>
+        <div class="r"><span>Conduct-cap breaches</span><div><div class="t"><i style="width:60%;background:var(--neg)">3</i></div><div class="t" style="margin-top:4px"><i style="width:9%;background:var(--pos)">0</i></div></div></div>
+      </div><p class="mut">Values in rating bands, except breaches (count). This simulates a calibration panel on synthetic data; it is not a forecast.</p></div>
+    <div class="card"><table class="stack"><thead><tr><th>Check</th><th>Result</th></tr></thead><tbody>
+      <tr><td>Lenient / severe managers</td><td>M05 and M10 caught; 0 false alerts on 14 others</td></tr>
+      <tr><td>Hidden gender gap in a 5-vs-5 team</td><td>Caught (watch tier)</td></tr>
+      <tr><td>Recency bias · thin evidence</td><td>6/6 · 5/5 detected</td></tr>
+      <tr><td>Counterfactual fairness</td><td>0 of 160 suggestions change</td></tr>
+      <tr><td>Conduct gate</td><td>3/3 mis-selling cases capped</td></tr>
+      <tr><td>Oversight, appeals, audit, kill switch</td><td>All pass</td></tr>
+      <tr><td>Scale</td><td>1,920 people audited in about 20 ms</td></tr></tbody></table>
+      <p class="mut" style="margin-top:12px"><b>Limitation we found:</b> v1 passed 22/25 with false alarms on small teams. Adding significance tests then missed a real gap, which led us to alert and watch tiers, both reviewed by humans.</p>
+      <a class="btn d" href="evidence.html">All 25 tests and limitations →</a></div>
+  </div>
+</div></section>
+
+<section class="ch reveal" id="roadmap"><div class="wrap">
+  <div class="kick">8 · Implementation roadmap and measurable impact</div>
+  <h2>Pilot where the pain is highest, then scale with proof</h2>
+  <div class="g3" style="margin-top:24px">
+    <div class="card"><span class="chip">0–3 months</span><h3 style="margin-top:10px">Pilot</h3><p class="mut">Customer Success plus two Platforms pods. Manager training and a DPDP notice to employees. Shadow mode: flags go to HR only.</p></div>
+    <div class="card"><span class="chip">3–6 months</span><h3 style="margin-top:10px">Learn</h3><p class="mut">Employee-facing explanations and appeals. First bias audit. Tune weights with employee representatives. Connect the LLM summariser.</p></div>
+    <div class="card"><span class="chip">6–12 months</span><h3 style="margin-top:10px">Scale</h3><p class="mut">All four role families including Fisdom and Wealth. Pay and ESOP decisions use calibrated ratings. External audit before FY28.</p></div>
+  </div>
+  <div class="g5" style="margin-top:18px">
+    <div class="stat"><b>35%</b><span>Support attrition target in 18 months (50% in FY25)</span></div>
+    <div class="stat"><b>≥ 85%</b><span>Employees with 5+ check-ins per half</span></div>
+    <div class="stat"><b>≥ 95%</b><span>Appeals closed within 10 working days</span></div>
+    <div class="stat"><b>&lt; 0.25</b><span>Spread of manager leniency after calibration</span></div>
+    <div class="stat"><b>0</b><span>Top ratings that breach a conduct cap</span></div>
+  </div>
+  <p class="mut" style="margin-top:12px">These are targets, not forecasts.</p>
+</div></section>
+
+<section class="ch reveal" id="downloads"><div class="wrap">
+  <div class="kick">Submission deliverables</div>
+  <h2>Everything the brief asks for</h2>
+  <div class="g3" style="margin-top:24px">
+    <a class="card dl" href="docs/PULSE_Groww_Hackathon_Deck.pdf"><small>8-slide deck · PDF</small><b>Presentation deck</b><span class="mut">Follows the brief's sequence; speaker notes in the PPTX</span></a>
+    <a class="card dl" href="docs/PULSE_Groww_Hackathon_Deck.pptx" download><small>8-slide deck · PowerPoint</small><b>Editable deck</b><span class="mut">Add team names on slide 1</span></a>
+    <a class="card dl" href="app.html"><small>Live web app</small><b>Functioning prototype</b><span class="mut">Employee, Manager, HR, Governance, Test lab</span></a>
+    <a class="card dl" href="data/PULSE_Synthetic_Test_Dataset.xlsx" download><small>Excel · labelled synthetic</small><b>Synthetic test dataset</b><span class="mut">160 employees with an answer-key sheet</span></a>
+    <a class="card dl" href="evidence.html"><small>Web page · printable</small><b>Test results and evidence</b><span class="mut">25 tests, iteration log, limitations</span></a>
+    <a class="card dl" href="docs/PULSE_Test_Results_Evidence_and_Sources.pdf"><small>PDF</small><b>Evidence file and source log</b><span class="mut">Evidence log, references, assumptions</span></a>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <p><b style="color:#dff1f7">PULSE</b> · Performance Hackathon 2026 · Team: [Name 1], [Name 2], [Name 3]</p>
+  <p>All employee records are synthetic, generated by a seeded script. Groww facts come only from public sources, cited on the <a href="evidence.html#sources">evidence page</a>. This project is not affiliated with or endorsed by Groww.</p>
+</div></footer>
+<script src="assets/site.js"></script>
+</body>
+</html>

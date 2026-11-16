@@ -1,0 +1,161 @@
+comment_id,emp_id,author,text,label_biased,label_vague
+R0001,E001,M01,Needs to improve overall and show more ownership.,False,True
+R0002,E002,M01,Has an attitude problem and is always complaining.,True,True
+R0003,E003,M01,Cut design tokens resolution time from 9 to 6 hours in Q2 by redesigning the triage flow; next step is mentoring two juniors on it.,False,False
+R0004,E004,M01,"Great team player, does good work.",False,True
+R0005,E005,M01,Delivered the order placement migration two weeks early with zero Sev-1 incidents; should now lead the design review for the next release.,False,False
+R0006,E006,M01,Onboarded 22 new clients on SIP flow with all suitability checks completed; follow-up cadence with dormant clients needs work.,False,False
+R0007,E007,M01,Cut design tokens resolution time from 9 to 6 hours in Q2 by redesigning the triage flow; next step is mentoring two juniors on it.,False,False
+R0008,E008,M01,"Raised QA score from 78% to 88% across 1,200 tickets on Groww Cloud APIs; can improve documentation of edge cases in the knowledge base.",False,False
+R0009,E009,M01,"Closed 14 of 15 audit observations on event pipeline before the deadline; one item slipped because of a vendor dependency, now escalated.",False,False
+R0010,E010,M01,Onboarded 22 new clients on design tokens with all suitability checks completed; follow-up cadence with dormant clients needs work.,False,False
+R0011,E011,M02,Cut event pipeline resolution time from 9 to 6 hours in Q2 by redesigning the triage flow; next step is mentoring two juniors on it.,False,False
+R0012,E012,M02,"Closed 14 of 15 audit observations on SIP flow before the deadline; one item slipped because of a vendor dependency, now escalated.",False,False
+R0013,E013,M02,Delivered the event pipeline migration two weeks early with zero Sev-1 incidents; should now lead the design review for the next release.,False,False
+R0014,E014,M02,"Raised QA score from 78% to 88% across 1,200 tickets on option chain; can improve documentation of edge cases in the knowledge base.",False,False
+R0015,E015,M02,"Closed 14 of 15 audit observations on option chain before the deadline; one item slipped because of a vendor dependency, now escalated.",False,False
+R0016,E016,M02,Delivered the event pipeline migration two weeks early with zero Sev-1 incidents; should now lead the design review for the next release.,False,False
+R0017,E017,M02,"Closed 14 of 15 audit observations on design tokens before the deadline; one item slipped because of a vendor dependency, now escalated.",False,False
+R0018,E018,M02,"Raised QA score from 78% to 88% across 1,200 tickets on Groww Cloud APIs; can improve documentation of edge cases in the knowledge base.",False,False
+R0019,E019,M02,"Closed 14 of 15 audit observations on design tokens before the deadline; one item slipped because of a vendor dependency, now escalated.",False,False
+R0020,E020,M02,Cut SIP flow resolution time from 9 to 6 hours in Q2 by redesigning the triage flow; next step is mentoring two juniors on it.,False,False
+R0021,E021,M03,Cut SIP flow resolution time from 9 to 6 hours in Q2 by redesigning the triage flow; next step is mentoring two juniors on it.,False,False
+R0022,E022,M03,"Good job this cycle, keep it up.",False,True
+R0023,E023,M03,Cut UPI mandates resolution time from 9 to 6 hours in Q2 by redesigning the triage flow; next step is mentoring two juniors on it.,False,False
+R0024,E024,M03,"Closed 14 of 15 audit observations on UPI mandates before the deadline; one item slipped because of a vendor dependency, now escalated.",False,False
+R0025,E025,M03,"Great team player, does good work.",False,True
+R0026,E026,M03,"Raised QA score from 78% to 88% across 1,200 tickets on order placement; can improve documentation of edge cases in the knowledge base.",False,False
+R0027,E027,M03,Needs to improve overall and show more ownership.,False,True
+R0028,E028,M03,"Raised QA score from 78% to 88% across 1,200 tickets on UPI mandates; can improve documentation of edge cases in the knowledge base.",False,False
+R0029,E029,M03,"Closed 14 of 15 audit observations on order placement before the deadline; one item slipped because of a vendor dependency, now escalated.",False,False
+R0030,E030,M03,Needs to improve overall and show more ownership.,False,True
+R0031,E031,M04,"Closed 14 of 15 audit observations on SIP flow before the deadline; one item slipped because of a vendor dependency, now escalated.",False,False
+R0032,E032,M04,Onboarded 22 new clients on Groww Cloud APIs with all suitability checks completed; follow-up cadence with dormant clients needs work.,False,False
+R0033,E033,M04,"Closed 14 of 15 audit observations on design tokens before the deadline; one item slipped because of a vendor dependency, now escalated.",False,False
+R0034,E034,M04,Delivered the option chain migration two weeks early with zero Sev-1 incidents; should now lead the design review for the next release.,False,False
+R0035,E035,M04,"Closed 14 of 15 audit observations on Groww Cloud APIs before the deadline; one item slipped because of a vendor dependency, now escalated.",False,False
+R0036,E036,M04,Onboarded 22 new clients on option chain with all suitability checks completed; follow-up cadence with dormant clients needs work.,False,False
+R0037,E037,M04,Delivered the SIP flow migration two weeks early with zero Sev-1 incidents; should now lead the design review for the next release.,False,False
+R0038,E038,M04,"Closed 14 of 15 audit observations on UPI mandates before the deadline; one item slipped because of a vendor dependency, now escalated.",False,False
+R0039,E039,M04,"Raised QA score from 78% to 88% across 1,200 tickets on Groww Cloud APIs; can improve documentation of edge cases in the knowledge base.",False,False
+R0040,E040,M04,Onboarded 22 new clients on event pipeline with all suitability checks completed; follow-up cadence with dormant clients needs work.,False,False
+R0041,E041,M05,Delivered the design tokens migration two weeks early with zero Sev-1 incidents; should now lead the design review for the next release.,False,False
+R0042,E042,M05,Needs to improve overall and show more ownership.,False,True
+R0043,E043,M05,"Closed 14 of 15 audit observations on event pipeline before the deadline; one item slipped because of a vendor dependency, now escalated.",False,False
+R0044,E044,M05,"Raised QA score from 78% to 88% across 1,200 tickets on option chain; can improve documentation of edge cases in the knowledge base.",False,False
+R0045,E045,M05,She can be too emotional in reviews and comes across as abrasive with stakeholders.,True,True
+R0046,E046,M05,Delivered the event pipeline migration two weeks early with zero Sev-1 incidents; should now lead the design review for the next release.,False,False
+R0047,E047,M05,Has an attitude problem and is always complaining.,True,True
+R0048,E048,M05,"Closed 14 of 15 audit observations on Groww Cloud APIs before the deadline; one item slipped because of a vendor dependency, now escalated.",False,False
+R0049,E049,M05,Cut event pipeline resolution time from 9 to 6 hours in Q2 by redesigning the triage flow; next step is mentoring two juniors on it.,False,False
+R0050,E050,M05,Delivered the SIP flow migration two weeks early with zero Sev-1 incidents; should now lead the design review for the next release.,False,False
+R0051,E051,M06,Delivered the UPI mandates migration two weeks early with zero Sev-1 incidents; should now lead the design review for the next release.,False,False
+R0052,E052,M06,Onboarded 22 new clients on design tokens with all suitability checks completed; follow-up cadence with dormant clients needs work.,False,False
+R0053,E053,M06,Cut UPI mandates resolution time from 9 to 6 hours in Q2 by redesigning the triage flow; next step is mentoring two juniors on it.,False,False
+R0054,E054,M06,Cut SIP flow resolution time from 9 to 6 hours in Q2 by redesigning the triage flow; next step is mentoring two juniors on it.,False,False
+R0055,E055,M06,Onboarded 22 new clients on UPI mandates with all suitability checks completed; follow-up cadence with dormant clients needs work.,False,False
+R0056,E056,M06,"Closed 14 of 15 audit observations on option chain before the deadline; one item slipped because of a vendor dependency, now escalated.",False,False
+R0057,E057,M06,Cut order placement resolution time from 9 to 6 hours in Q2 by redesigning the triage flow; next step is mentoring two juniors on it.,False,False
+R0058,E058,M06,Delivered the option chain migration two weeks early with zero Sev-1 incidents; should now lead the design review for the next release.,False,False
+R0059,E059,M06,Onboarded 22 new clients on option chain with all suitability checks completed; follow-up cadence with dormant clients needs work.,False,False
+R0060,E060,M06,Onboarded 22 new clients on order placement with all suitability checks completed; follow-up cadence with dormant clients needs work.,False,False
+R0061,E061,M07,"Raised QA score from 78% to 88% across 1,200 tickets on Groww Cloud APIs; can improve documentation of edge cases in the knowledge base.",False,False
+R0062,E062,M07,Onboarded 22 new clients on UPI mandates with all suitability checks completed; follow-up cadence with dormant clients needs work.,False,False
+R0063,E063,M07,"Raised QA score from 78% to 88% across 1,200 tickets on option chain; can improve documentation of edge cases in the knowledge base.",False,False
+R0064,E064,M07,Delivered the design tokens migration two weeks early with zero Sev-1 incidents; should now lead the design review for the next release.,False,False
+R0065,E065,M07,Delivered the event pipeline migration two weeks early with zero Sev-1 incidents; should now lead the design review for the next release.,False,False
+R0066,E066,M07,Onboarded 22 new clients on event pipeline with all suitability checks completed; follow-up cadence with dormant clients needs work.,False,False
+R0067,E067,M07,Delivered the option chain migration two weeks early with zero Sev-1 incidents; should now lead the design review for the next release.,False,False
+R0068,E068,M07,"Raised QA score from 78% to 88% across 1,200 tickets on Groww Cloud APIs; can improve documentation of edge cases in the knowledge base.",False,False
+R0069,E069,M07,Onboarded 22 new clients on Groww Cloud APIs with all suitability checks completed; follow-up cadence with dormant clients needs work.,False,False
+R0070,E070,M07,Delivered the Groww Cloud APIs migration two weeks early with zero Sev-1 incidents; should now lead the design review for the next release.,False,False
+R0071,E071,M08,Delivered the chat support migration two weeks early with zero Sev-1 incidents; should now lead the design review for the next release.,False,False
+R0072,E072,M08,Needs to improve overall and show more ownership.,False,True
+R0073,E073,M08,Cut voice support resolution time from 9 to 6 hours in Q2 by redesigning the triage flow; next step is mentoring two juniors on it.,False,False
+R0074,E074,M08,Cut escalations resolution time from 9 to 6 hours in Q2 by redesigning the triage flow; next step is mentoring two juniors on it.,False,False
+R0075,E075,M08,"Closed 14 of 15 audit observations on voice support before the deadline; one item slipped because of a vendor dependency, now escalated.",False,False
+R0076,E076,M08,Delivered the voice support migration two weeks early with zero Sev-1 incidents; should now lead the design review for the next release.,False,False
+R0077,E077,M08,"She is very sweet and soft-spoken, maybe not leadership material yet.",True,True
+R0078,E078,M08,Delivered the escalations migration two weeks early with zero Sev-1 incidents; should now lead the design review for the next release.,False,False
+R0079,E079,M08,"Closed 14 of 15 audit observations on voice support before the deadline; one item slipped because of a vendor dependency, now escalated.",False,False
+R0080,E080,M08,"Good job this cycle, keep it up.",False,True
+R0081,E081,M09,"Raised QA score from 78% to 88% across 1,200 tickets on escalations; can improve documentation of edge cases in the knowledge base.",False,False
+R0082,E082,M09,Cut KYC onboarding resolution time from 9 to 6 hours in Q2 by redesigning the triage flow; next step is mentoring two juniors on it.,False,False
+R0083,E083,M09,Has an attitude problem and is always complaining.,True,True
+R0084,E084,M09,Onboarded 22 new clients on chat support with all suitability checks completed; follow-up cadence with dormant clients needs work.,False,False
+R0085,E085,M09,Onboarded 22 new clients on escalations with all suitability checks completed; follow-up cadence with dormant clients needs work.,False,False
+R0086,E086,M09,"Raised QA score from 78% to 88% across 1,200 tickets on KYC onboarding; can improve documentation of edge cases in the knowledge base.",False,False
+R0087,E087,M09,"Closed 14 of 15 audit observations on escalations before the deadline; one item slipped because of a vendor dependency, now escalated.",False,False
+R0088,E088,M09,"Good job this cycle, keep it up.",False,True
+R0089,E089,M09,"Great team player, does good work.",False,True
+R0090,E090,M09,Onboarded 22 new clients on escalations with all suitability checks completed; follow-up cadence with dormant clients needs work.,False,False
+R0091,E091,M10,Onboarded 22 new clients on escalations with all suitability checks completed; follow-up cadence with dormant clients needs work.,False,False
+R0092,E092,M10,"Raised QA score from 78% to 88% across 1,200 tickets on KYC onboarding; can improve documentation of edge cases in the knowledge base.",False,False
+R0093,E093,M10,Delivered the chat support migration two weeks early with zero Sev-1 incidents; should now lead the design review for the next release.,False,False
+R0094,E094,M10,Onboarded 22 new clients on chat support with all suitability checks completed; follow-up cadence with dormant clients needs work.,False,False
+R0095,E095,M10,"Good job this cycle, keep it up.",False,True
+R0096,E096,M10,Delivered the KYC onboarding migration two weeks early with zero Sev-1 incidents; should now lead the design review for the next release.,False,False
+R0097,E097,M10,Onboarded 22 new clients on escalations with all suitability checks completed; follow-up cadence with dormant clients needs work.,False,False
+R0098,E098,M10,"Closed 14 of 15 audit observations on KYC onboarding before the deadline; one item slipped because of a vendor dependency, now escalated.",False,False
+R0099,E099,M10,Onboarded 22 new clients on escalations with all suitability checks completed; follow-up cadence with dormant clients needs work.,False,False
+R0100,E100,M10,Cut escalations resolution time from 9 to 6 hours in Q2 by redesigning the triage flow; next step is mentoring two juniors on it.,False,False
+R0101,E101,M11,Cut KYC onboarding resolution time from 9 to 6 hours in Q2 by redesigning the triage flow; next step is mentoring two juniors on it.,False,False
+R0102,E102,M11,"Raised QA score from 78% to 88% across 1,200 tickets on chat support; can improve documentation of edge cases in the knowledge base.",False,False
+R0103,E103,M11,"Raised QA score from 78% to 88% across 1,200 tickets on chat support; can improve documentation of edge cases in the knowledge base.",False,False
+R0104,E104,M11,"Closed 14 of 15 audit observations on chat support before the deadline; one item slipped because of a vendor dependency, now escalated.",False,False
+R0105,E105,M11,Delivered the KYC onboarding migration two weeks early with zero Sev-1 incidents; should now lead the design review for the next release.,False,False
+R0106,E106,M11,"Closed 14 of 15 audit observations on KYC onboarding before the deadline; one item slipped because of a vendor dependency, now escalated.",False,False
+R0107,E107,M11,Cut voice support resolution time from 9 to 6 hours in Q2 by redesigning the triage flow; next step is mentoring two juniors on it.,False,False
+R0108,E108,M11,"Raised QA score from 78% to 88% across 1,200 tickets on KYC onboarding; can improve documentation of edge cases in the knowledge base.",False,False
+R0109,E109,M11,"Closed 14 of 15 audit observations on voice support before the deadline; one item slipped because of a vendor dependency, now escalated.",False,False
+R0110,E110,M11,"Great team player, does good work.",False,True
+R0111,E111,M12,"Closed 14 of 15 audit observations on advisory book before the deadline; one item slipped because of a vendor dependency, now escalated.",False,False
+R0112,E112,M12,Onboarded 22 new clients on PMS book with all suitability checks completed; follow-up cadence with dormant clients needs work.,False,False
+R0113,E113,M12,Needs to improve overall and show more ownership.,False,True
+R0114,E114,M12,Onboarded 22 new clients on PMS book with all suitability checks completed; follow-up cadence with dormant clients needs work.,False,False
+R0115,E115,M12,Onboarded 22 new clients on HNI portfolio with all suitability checks completed; follow-up cadence with dormant clients needs work.,False,False
+R0116,E116,M12,"Good job this cycle, keep it up.",False,True
+R0117,E117,M12,Cut HNI portfolio resolution time from 9 to 6 hours in Q2 by redesigning the triage flow; next step is mentoring two juniors on it.,False,False
+R0118,E118,M12,"Raised QA score from 78% to 88% across 1,200 tickets on PMS book; can improve documentation of edge cases in the knowledge base.",False,False
+R0119,E119,M12,Onboarded 22 new clients on HNI portfolio with all suitability checks completed; follow-up cadence with dormant clients needs work.,False,False
+R0120,E120,M12,"Good job this cycle, keep it up.",False,True
+R0121,E121,M13,She can be too emotional in reviews and comes across as abrasive with stakeholders.,True,True
+R0122,E122,M13,"Raised QA score from 78% to 88% across 1,200 tickets on HNI portfolio; can improve documentation of edge cases in the knowledge base.",False,False
+R0123,E123,M13,Bit too aggressive and bossy with the team; not sure he is a culture fit.,True,True
+R0124,E124,M13,"Good job this cycle, keep it up.",False,True
+R0125,E125,M13,"Satisfactory performance, nothing major to report.",False,True
+R0126,E126,M13,Cut PMS book resolution time from 9 to 6 hours in Q2 by redesigning the triage flow; next step is mentoring two juniors on it.,False,False
+R0127,E127,M13,Delivered the PMS book migration two weeks early with zero Sev-1 incidents; should now lead the design review for the next release.,False,False
+R0128,E128,M13,Delivered the advisory book migration two weeks early with zero Sev-1 incidents; should now lead the design review for the next release.,False,False
+R0129,E129,M13,Onboarded 22 new clients on HNI portfolio with all suitability checks completed; follow-up cadence with dormant clients needs work.,False,False
+R0130,E130,M13,Has an attitude problem and is always complaining.,True,True
+R0131,E131,M14,"Good job this cycle, keep it up.",False,True
+R0132,E132,M14,Cut advisory book resolution time from 9 to 6 hours in Q2 by redesigning the triage flow; next step is mentoring two juniors on it.,False,False
+R0133,E133,M14,Cut PMS book resolution time from 9 to 6 hours in Q2 by redesigning the triage flow; next step is mentoring two juniors on it.,False,False
+R0134,E134,M14,"Closed 14 of 15 audit observations on PMS book before the deadline; one item slipped because of a vendor dependency, now escalated.",False,False
+R0135,E135,M14,"Raised QA score from 78% to 88% across 1,200 tickets on PMS book; can improve documentation of edge cases in the knowledge base.",False,False
+R0136,E136,M14,Onboarded 22 new clients on PMS book with all suitability checks completed; follow-up cadence with dormant clients needs work.,False,False
+R0137,E137,M14,Cut PMS book resolution time from 9 to 6 hours in Q2 by redesigning the triage flow; next step is mentoring two juniors on it.,False,False
+R0138,E138,M14,"Good job this cycle, keep it up.",False,True
+R0139,E139,M14,"Closed 14 of 15 audit observations on advisory book before the deadline; one item slipped because of a vendor dependency, now escalated.",False,False
+R0140,E140,M14,"Satisfactory performance, nothing major to report.",False,True
+R0141,E141,M15,Onboarded 22 new clients on AMC operations with all suitability checks completed; follow-up cadence with dormant clients needs work.,False,False
+R0142,E142,M15,"Good job this cycle, keep it up.",False,True
+R0143,E143,M15,"Raised QA score from 78% to 88% across 1,200 tickets on surveillance alerts; can improve documentation of edge cases in the knowledge base.",False,False
+R0144,E144,M15,Delivered the AMC operations migration two weeks early with zero Sev-1 incidents; should now lead the design review for the next release.,False,False
+R0145,E145,M15,"Good job this cycle, keep it up.",False,True
+R0146,E146,M15,"Raised QA score from 78% to 88% across 1,200 tickets on AMC operations; can improve documentation of edge cases in the knowledge base.",False,False
+R0147,E147,M15,Cut SEBI reporting resolution time from 9 to 6 hours in Q2 by redesigning the triage flow; next step is mentoring two juniors on it.,False,False
+R0148,E148,M15,"Raised QA score from 78% to 88% across 1,200 tickets on SEBI reporting; can improve documentation of edge cases in the knowledge base.",False,False
+R0149,E149,M15,"Raised QA score from 78% to 88% across 1,200 tickets on AMC operations; can improve documentation of edge cases in the knowledge base.",False,False
+R0150,E150,M15,Delivered the SEBI reporting migration two weeks early with zero Sev-1 incidents; should now lead the design review for the next release.,False,False
+R0151,E151,M16,Cut SEBI reporting resolution time from 9 to 6 hours in Q2 by redesigning the triage flow; next step is mentoring two juniors on it.,False,False
+R0152,E152,M16,Lacks executive presence; she never speaks up in meetings.,True,True
+R0153,E153,M16,Cut AMC operations resolution time from 9 to 6 hours in Q2 by redesigning the triage flow; next step is mentoring two juniors on it.,False,False
+R0154,E154,M16,"Raised QA score from 78% to 88% across 1,200 tickets on AMC operations; can improve documentation of edge cases in the knowledge base.",False,False
+R0155,E155,M16,"Raised QA score from 78% to 88% across 1,200 tickets on AMC operations; can improve documentation of edge cases in the knowledge base.",False,False
+R0156,E156,M16,"Too pushy with clients, and his tone is shrill on calls.",True,True
+R0157,E157,M16,Cut SEBI reporting resolution time from 9 to 6 hours in Q2 by redesigning the triage flow; next step is mentoring two juniors on it.,False,False
+R0158,E158,M16,Delivered the AMC operations migration two weeks early with zero Sev-1 incidents; should now lead the design review for the next release.,False,False
+R0159,E159,M16,"Good job this cycle, keep it up.",False,True
+R0160,E160,M16,"Closed 14 of 15 audit observations on AMC operations before the deadline; one item slipped because of a vendor dependency, now escalated.",False,False
