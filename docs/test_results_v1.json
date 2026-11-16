@@ -1,0 +1,592 @@
+{
+ "generated": "2026-11-16T15:41:19.175Z",
+ "summary": {
+  "total": 25,
+  "passed": 22,
+  "metrics": {
+   "etaBefore": 0.18,
+   "etaAfter": 0.06,
+   "gapBefore": -0.6,
+   "gapAfter": 0,
+   "breachesBefore": 3,
+   "breachesAfter": 0,
+   "changed": 32,
+   "abstentions": 12,
+   "cases": 22,
+   "flaggedManagers": [
+    "M05:lenient",
+    "M09:lenient",
+    "M10:severe"
+   ],
+   "auditMs": 15.92,
+   "bigMs": 23.81
+  }
+ },
+ "tests": [
+  {
+   "id": "T01",
+   "area": "Governance",
+   "name": "Dataset is labelled synthetic",
+   "expected": "meta.label contains SYNTHETIC",
+   "observed": "SYNTHETIC DATA - NOT REAL GROWW EMPLOYEES",
+   "pass": true,
+   "metric": ""
+  },
+  {
+   "id": "T02",
+   "area": "Explainability",
+   "name": "Factor contributions add up exactly to the composite score",
+   "expected": "max error ≤ 0.05 pts",
+   "observed": "max error 0.020 pts over 148 employees",
+   "pass": true,
+   "metric": ""
+  },
+  {
+   "id": "T03",
+   "area": "Fairness",
+   "name": "Counterfactual: flipping gender never changes the AI suggestion",
+   "expected": "0 changed suggestions",
+   "observed": "0 of 160 changed",
+   "pass": true,
+   "metric": ""
+  },
+  {
+   "id": "T04",
+   "area": "Fairness",
+   "name": "Counterfactual: flipping location never changes the AI suggestion",
+   "expected": "0 changed suggestions",
+   "observed": "0 of 160 changed",
+   "pass": true,
+   "metric": ""
+  },
+  {
+   "id": "T05",
+   "area": "Robustness",
+   "name": "AI abstains for new joiners / thin evidence instead of guessing",
+   "expected": "6/6 new joiners abstained",
+   "observed": "6/6 new joiners; 12 total abstentions (7.5%)",
+   "pass": true,
+   "metric": ""
+  },
+  {
+   "id": "T06",
+   "area": "Incentive safeguard",
+   "name": "Conduct gate caps rating for confirmed mis-selling despite strong sales",
+   "expected": "every breach capped (major ≤2, minor ≤3)",
+   "observed": "E112: raw 4→2; E127: raw 4→2; E135: raw 3→3",
+   "pass": true,
+   "metric": ""
+  },
+  {
+   "id": "T07",
+   "area": "Calibration",
+   "name": "Lenient manager detected (M05)",
+   "expected": "flag = lenient",
+   "observed": "lenient (mean residual +0.78)",
+   "pass": true,
+   "metric": ""
+  },
+  {
+   "id": "T08",
+   "area": "Calibration",
+   "name": "Severe manager detected (M10)",
+   "expected": "flag = severe",
+   "observed": "severe (mean residual -0.89)",
+   "pass": true,
+   "metric": ""
+  },
+  {
+   "id": "T09",
+   "area": "Calibration",
+   "name": "No false leniency/severity flags on the other managers",
+   "expected": "0 false flags of 14",
+   "observed": "1 false flags M09",
+   "pass": false,
+   "metric": ""
+  },
+  {
+   "id": "T10",
+   "area": "Fairness",
+   "name": "Hidden within-team gender gap detected (M13)",
+   "expected": "flag, women disadvantaged",
+   "observed": "flagged: gap -0.6 band, n=5/5",
+   "pass": true,
+   "metric": ""
+  },
+  {
+   "id": "T11",
+   "area": "Fairness",
+   "name": "False gender-gap flags on other teams",
+   "expected": "≤1 (small-team noise tolerated, reviewed by humans)",
+   "observed": "2 M03 -1; M12 0.53",
+   "pass": false,
+   "metric": ""
+  },
+  {
+   "id": "T12",
+   "area": "Fairness",
+   "name": "Control: location (no injected bias) is not flagged at org level",
+   "expected": "org location flag = false",
+   "observed": "org spread 0.2, team-level location flags 0",
+   "pass": true,
+   "metric": ""
+  },
+  {
+   "id": "T13",
+   "area": "Insight",
+   "name": "Org-level gender view MASKS the team-level gap (why team-level audit is needed)",
+   "expected": "org gender spread < 0.5 while T10 flags",
+   "observed": "org gender residual spread 0.08; AIR top ratings 0.94",
+   "pass": true,
+   "metric": ""
+  },
+  {
+   "id": "T14",
+   "area": "Bias detection",
+   "name": "Recency-bias cases detected",
+   "expected": "recall ≥ 0.8, precision ≥ 0.8",
+   "observed": "recall 1.00, precision 1.00 (6/6)",
+   "pass": true,
+   "metric": ""
+  },
+  {
+   "id": "T15",
+   "area": "Bias detection",
+   "name": "Top ratings with thin evidence detected",
+   "expected": "recall = 1.0",
+   "observed": "recall 1.00; 6 flagged (1 were legitimate new-joiner top ratings)",
+   "pass": true,
+   "metric": ""
+  },
+  {
+   "id": "T16",
+   "area": "AI quality",
+   "name": "Feedback checker vs labelled dataset comments",
+   "expected": "biased P/R ≥ 0.9; vague P/R ≥ 0.8",
+   "observed": "biased P 1.00 R 1.00; vague P 0.77 R 1.00",
+   "pass": false,
+   "metric": ""
+  },
+  {
+   "id": "T17",
+   "area": "AI quality",
+   "name": "Feedback checker on 10 hand-written adversarial comments",
+   "expected": "accuracy ≥ 0.8 (errors documented)",
+   "observed": "accuracy 0.90; misses: \"She ran an aggressive migration timeli…\"",
+   "pass": true,
+   "metric": ""
+  },
+  {
+   "id": "T18",
+   "area": "AI quality",
+   "name": "SMART goal checker vs labelled dataset goals",
+   "expected": "accuracy ≥ 0.95",
+   "observed": "accuracy 1.000 on 549 goals",
+   "pass": true,
+   "metric": ""
+  },
+  {
+   "id": "T19",
+   "area": "AI quality",
+   "name": "SMART checker on 12 hand-written adversarial goals",
+   "expected": "accuracy ≥ 0.8 (errors documented)",
+   "observed": "accuracy 1.00; misses: none",
+   "pass": true,
+   "metric": ""
+  },
+  {
+   "id": "T20",
+   "area": "Human oversight",
+   "name": "Override of AI band needs evidence-based, bias-free justification",
+   "expected": "short→reject, biased→reject, evidenced→accept, agree→no justification",
+   "observed": "false / false / true / true",
+   "pass": true,
+   "metric": ""
+  },
+  {
+   "id": "T21",
+   "area": "Audit",
+   "name": "Hash-chained audit trail detects tampering",
+   "expected": "intact=true; after edit → broken at #18",
+   "observed": "intact=true; after edit broken at #18",
+   "pass": true,
+   "metric": ""
+  },
+  {
+   "id": "T22",
+   "area": "Contestability",
+   "name": "Appeal workflow enforces states, rationale and 10-working-day SLA",
+   "expected": "invalid jump blocked; rationale required; due 2026-11-03",
+   "observed": "blocked=true, rationale=true, due 2026-11-03, final closed",
+   "pass": true,
+   "metric": ""
+  },
+  {
+   "id": "T23",
+   "area": "Human oversight",
+   "name": "Kill switch: AI off → no suggestions, process continues manually",
+   "expected": "all 160 = disabled",
+   "observed": "160 disabled",
+   "pass": true,
+   "metric": ""
+  },
+  {
+   "id": "T24",
+   "area": "Performance",
+   "name": "Score + full fairness audit for 1920 employees (≈ Groww's 1,802 headcount)",
+   "expected": "< 1,000 ms",
+   "observed": "24 ms (160 employees: 16 ms)",
+   "pass": true,
+   "metric": ""
+  },
+  {
+   "id": "T25",
+   "area": "Impact (simulated)",
+   "name": "Calibration with AI flags reduces rater-driven variance and the hidden gender gap",
+   "expected": "manager share of rating noise ↓ ≥ 50%; M13 gap → |gap| < 0.3; conduct-cap breaches → 0",
+   "observed": "manager share 18% → 6%; M13 gap -0.6 → 0; breaches 3 → 0; 32 ratings changed",
+   "pass": true,
+   "metric": ""
+  }
+ ],
+ "managerStats": [
+  {
+   "manager_id": "M01",
+   "n": 10,
+   "meanResidual": 0.2,
+   "flag": null
+  },
+  {
+   "manager_id": "M02",
+   "n": 8,
+   "meanResidual": 0,
+   "flag": null
+  },
+  {
+   "manager_id": "M03",
+   "n": 10,
+   "meanResidual": 0.3,
+   "flag": null
+  },
+  {
+   "manager_id": "M04",
+   "n": 9,
+   "meanResidual": 0,
+   "flag": null
+  },
+  {
+   "manager_id": "M05",
+   "n": 9,
+   "meanResidual": 0.78,
+   "flag": "lenient"
+  },
+  {
+   "manager_id": "M06",
+   "n": 10,
+   "meanResidual": 0,
+   "flag": null
+  },
+  {
+   "manager_id": "M07",
+   "n": 10,
+   "meanResidual": 0,
+   "flag": null
+  },
+  {
+   "manager_id": "M08",
+   "n": 9,
+   "meanResidual": -0.11,
+   "flag": null
+  },
+  {
+   "manager_id": "M09",
+   "n": 9,
+   "meanResidual": 0.56,
+   "flag": "lenient"
+  },
+  {
+   "manager_id": "M10",
+   "n": 9,
+   "meanResidual": -0.89,
+   "flag": "severe"
+  },
+  {
+   "manager_id": "M11",
+   "n": 10,
+   "meanResidual": -0.1,
+   "flag": null
+  },
+  {
+   "manager_id": "M12",
+   "n": 8,
+   "meanResidual": 0,
+   "flag": null
+  },
+  {
+   "manager_id": "M13",
+   "n": 10,
+   "meanResidual": -0.3,
+   "flag": null
+  },
+  {
+   "manager_id": "M14",
+   "n": 10,
+   "meanResidual": 0.2,
+   "flag": null
+  },
+  {
+   "manager_id": "M15",
+   "n": 8,
+   "meanResidual": 0.13,
+   "flag": null
+  },
+  {
+   "manager_id": "M16",
+   "n": 9,
+   "meanResidual": 0.11,
+   "flag": null
+  }
+ ],
+ "teamGaps": [
+  {
+   "manager_id": "M03",
+   "attribute": "gender",
+   "groups": [
+    "M",
+    "F"
+   ],
+   "n": [
+    7,
+    3
+   ],
+   "gap": -1,
+   "disadvantaged": "M"
+  },
+  {
+   "manager_id": "M12",
+   "attribute": "gender",
+   "groups": [
+    "M",
+    "F"
+   ],
+   "n": [
+    5,
+    3
+   ],
+   "gap": 0.53,
+   "disadvantaged": "F"
+  },
+  {
+   "manager_id": "M13",
+   "attribute": "gender",
+   "groups": [
+    "F",
+    "M"
+   ],
+   "n": [
+    5,
+    5
+   ],
+   "gap": -0.6,
+   "disadvantaged": "F"
+  }
+ ],
+ "orgGroups": {
+  "gender": {
+   "stats": [
+    {
+     "group": "M",
+     "n": 104,
+     "meanResidual": 0.08,
+     "topRateMgr": 0.32,
+     "topRateAI": 0.25
+    },
+    {
+     "group": "F",
+     "n": 44,
+     "meanResidual": 0,
+     "topRateMgr": 0.34,
+     "topRateAI": 0.3
+    }
+   ],
+   "airTopRatings": 0.94,
+   "residualSpread": 0.08,
+   "flag": false
+  },
+  "location": {
+   "stats": [
+    {
+     "group": "Bengaluru",
+     "n": 94,
+     "meanResidual": 0.11,
+     "topRateMgr": 0.37,
+     "topRateAI": 0.31
+    },
+    {
+     "group": "Mumbai",
+     "n": 32,
+     "meanResidual": -0.09,
+     "topRateMgr": 0.22,
+     "topRateAI": 0.19
+    },
+    {
+     "group": "Gurugram",
+     "n": 22,
+     "meanResidual": 0.05,
+     "topRateMgr": 0.27,
+     "topRateAI": 0.18
+    }
+   ],
+   "airTopRatings": 0.59,
+   "residualSpread": 0.2,
+   "flag": false
+  },
+  "role_family": {
+   "stats": [
+    {
+     "group": "Platforms (Eng/Product/Design)",
+     "n": 66,
+     "meanResidual": 0.18,
+     "topRateMgr": 0.41,
+     "topRateAI": 0.29
+    },
+    {
+     "group": "Customer Success",
+     "n": 37,
+     "meanResidual": -0.14,
+     "topRateMgr": 0.22,
+     "topRateAI": 0.24
+    },
+    {
+     "group": "Wealth & Advisory",
+     "n": 28,
+     "meanResidual": -0.04,
+     "topRateMgr": 0.21,
+     "topRateAI": 0.21
+    },
+    {
+     "group": "AMC, Risk & Compliance",
+     "n": 17,
+     "meanResidual": 0.12,
+     "topRateMgr": 0.41,
+     "topRateAI": 0.29
+    }
+   ],
+   "airTopRatings": 0.51,
+   "residualSpread": 0.32,
+   "flag": false
+  }
+ },
+ "cases": [
+  {
+   "emp_id": "E006",
+   "type": "recency",
+   "detail": "100% of evidence is from the last 30 days"
+  },
+  {
+   "emp_id": "E019",
+   "type": "evidence_light",
+   "detail": "Rated 5 with only 2 evidence item(s)"
+  },
+  {
+   "emp_id": "E029",
+   "type": "recency",
+   "detail": "91% of evidence is from the last 30 days"
+  },
+  {
+   "emp_id": "E038",
+   "type": "evidence_light",
+   "detail": "Rated 5 with only 2 evidence item(s)"
+  },
+  {
+   "emp_id": "E061",
+   "type": "recency",
+   "detail": "89% of evidence is from the last 30 days"
+  },
+  {
+   "emp_id": "E072",
+   "type": "evidence_light",
+   "detail": "Rated 5 with only 2 evidence item(s)"
+  },
+  {
+   "emp_id": "E083",
+   "type": "evidence_light",
+   "detail": "Rated 4 with only 2 evidence item(s)"
+  },
+  {
+   "emp_id": "E092",
+   "type": "divergence",
+   "detail": "Manager 1 vs evidence band 3"
+  },
+  {
+   "emp_id": "E093",
+   "type": "divergence",
+   "detail": "Manager 1 vs evidence band 3"
+  },
+  {
+   "emp_id": "E094",
+   "type": "recency",
+   "detail": "92% of evidence is from the last 30 days"
+  },
+  {
+   "emp_id": "E099",
+   "type": "evidence_light",
+   "detail": "Rated 5 with only 2 evidence item(s)"
+  },
+  {
+   "emp_id": "E104",
+   "type": "recency",
+   "detail": "92% of evidence is from the last 30 days"
+  },
+  {
+   "emp_id": "E112",
+   "type": "divergence",
+   "detail": "Manager 5 vs evidence band 2"
+  },
+  {
+   "emp_id": "E112",
+   "type": "conduct_gate",
+   "detail": "Rated 5 despite major conduct breach (cap 2)"
+  },
+  {
+   "emp_id": "E123",
+   "type": "divergence",
+   "detail": "Manager 2 vs evidence band 4"
+  },
+  {
+   "emp_id": "E125",
+   "type": "divergence",
+   "detail": "Manager 1 vs evidence band 3"
+  },
+  {
+   "emp_id": "E127",
+   "type": "divergence",
+   "detail": "Manager 5 vs evidence band 2"
+  },
+  {
+   "emp_id": "E127",
+   "type": "conduct_gate",
+   "detail": "Rated 5 despite major conduct breach (cap 2)"
+  },
+  {
+   "emp_id": "E135",
+   "type": "divergence",
+   "detail": "Manager 5 vs evidence band 3"
+  },
+  {
+   "emp_id": "E135",
+   "type": "conduct_gate",
+   "detail": "Rated 5 despite minor conduct breach (cap 3)"
+  },
+  {
+   "emp_id": "E146",
+   "type": "evidence_light",
+   "detail": "Rated 5 with only 2 evidence item(s)"
+  },
+  {
+   "emp_id": "E150",
+   "type": "recency",
+   "detail": "92% of evidence is from the last 30 days"
+  }
+ ]
+}
